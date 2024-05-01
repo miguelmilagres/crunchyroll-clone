@@ -1,19 +1,6 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import ReceptionScreen from "./src/screens/ReceptionScreen";
+import "react-native-gesture-handler";
+import Routes from "./src/routes";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <ReceptionScreen />
-      {/* <StatusBar style="auto" /> */}
-    </View>
-  );
+  return <Routes />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-});
