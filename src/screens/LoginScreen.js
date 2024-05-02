@@ -20,7 +20,7 @@ export default function LoginScreen({ navigation }) {
   const password = "123456";
 
   function buttonFunction() {
-    if (email == login && senha == password) {
+    if (email.toLowerCase() == login && senha == password) {
       return navigation.navigate("main");
     } else {
       return Alert.alert(
