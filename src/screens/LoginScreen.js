@@ -17,7 +17,7 @@ export default function LoginScreen({ navigation }) {
   const [senha, setSenha] = useState("");
 
   const login = "teste@email.com";
-  const password = "123456";
+  const password = "123";
 
   function buttonFunction() {
     if (email.toLowerCase() == login && senha == password) {

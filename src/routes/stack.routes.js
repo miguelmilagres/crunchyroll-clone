@@ -3,7 +3,7 @@ import { Feather } from "@expo/vector-icons";
 
 import ReceptionScreen from "../screens/ReceptionScreen";
 import LoginScreen from "../screens/LoginScreen";
-import MainScreen from "../screens/MainScreen";
+import BottomTabs from "./bottom-tabs.routes";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -14,8 +14,6 @@ export default function Stack() {
         name="reception"
         component={ReceptionScreen}
         options={{
-          title: "Reception",
-          headerTintColor: "black",
           headerShown: false,
         }}
       />
@@ -38,11 +36,9 @@ export default function Stack() {
       />
       <Screen
         name="main"
-        component={MainScreen}
+        component={BottomTabs}
         options={{
-          title: "Main",
-          headerTintColor: "blue",
-          headerShown: true,
+          headerShown: false,
         }}
       ></Screen>
     </Navigator>
