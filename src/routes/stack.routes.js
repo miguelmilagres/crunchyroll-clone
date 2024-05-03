@@ -3,6 +3,7 @@ import { Feather } from "@expo/vector-icons";
 
 import ReceptionScreen from "../screens/ReceptionScreen";
 import LoginScreen from "../screens/LoginScreen";
+import ProfileScreen from "../screens/ProfileScreen";
 import BottomTabs from "./bottom-tabs.routes";
 
 const { Navigator, Screen } = createStackNavigator();
@@ -13,6 +14,13 @@ export default function Stack() {
       <Screen
         name="reception"
         component={ReceptionScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Screen
+        name="profile"
+        component={ProfileScreen}
         options={{
           headerShown: false,
         }}

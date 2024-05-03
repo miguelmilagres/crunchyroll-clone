@@ -21,7 +21,7 @@ export default function ReceptionScreen({ navigation }) {
         </Text>
         <TouchableOpacity
           style={styles.buttonOne}
-          onPress={() => navigation.navigate("#")}
+          onPress={() => navigation.navigate("profile")}
         >
           <Text style={{ color: "black", fontWeight: 500 }}>
             EXPERIMENTE O TESTE GRATUITO
